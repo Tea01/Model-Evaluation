@@ -84,8 +84,7 @@ model.fit(X_train, y_train)
 prediction = model.predict(X_test)
 np.sum(prediction == y_test) / y_test.shape[0]
 
-"""# Exercise
-
+"""
 In this exercise, we will use bootstrapping to estimate the generalization error of the K-nearest neighbors (KNN) algorithm using various metrics including f1 score, accuracy, recall, and precision. Follow the instructions below and report the results:
 
 For each metric, repeat the following process 100 times:
@@ -99,7 +98,6 @@ For each metric, repeat the following process 100 times:
 Finally, for each metric, calculate the average performance across the 100 executions for each metric.
 """
 
-#Your code here
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 df = pd.read_csv('bank-additional-full.csv',sep=";")
 
